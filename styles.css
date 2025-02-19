@@ -1,9 +1,11 @@
 :root {
-    --primary-color: #7B3FE4;
+    --primary-color: #6B2ED4;
     --secondary-color: #F5F5F5;
-    --text-color: #333;
+    --text-color: #2D2D2D;
     --white: #FFFFFF;
-    --green: #76B947;
+    --green: #2E8B57;
+    --light-gray: #666666;
+    --dark-gray: #333333;
 }
 
 * {
@@ -43,8 +45,14 @@ body {
 
 .nav-links a {
     text-decoration: none;
-    color: var(--text-color);
-    font-weight: 500;
+    color: var(--dark-gray);
+    font-weight: 600;
+}
+
+.nav-links a:hover, 
+.nav-links a:focus {
+    color: var(--primary-color);
+    text-decoration: underline;
 }
 
 .quero-adotar {
@@ -88,7 +96,7 @@ body {
 .hero p {
     font-size: 1.1rem;
     margin-bottom: 2rem;
-    color: #666;
+    color: var(--dark-gray);
 }
 
 .adotar-meu-pet {
@@ -112,15 +120,22 @@ body {
 
 .category-btn {
     background-color: var(--white);
-    border: 2px solid #E0E0E0;
+    border: 2px solid var(--dark-gray);
     padding: 0.5rem 1.5rem;
     border-radius: 25px;
     cursor: pointer;
-    font-weight: 500;
-    color: #666;
+    font-weight: 600;
+    color: var(--dark-gray);
     display: flex;
     align-items: center;
     gap: 0.5rem;
+}
+
+.category-btn:hover,
+.category-btn:focus {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border-color: var(--primary-color);
 }
 
 /* Pets Grid */
@@ -223,6 +238,16 @@ body {
     align-items: center;
     justify-content: center;
     gap: 0.5rem;
+}
+
+.material-symbols-outlined {
+    color: var(--dark-gray);
+    font-size: 24px;
+}
+
+.help-item h3 .material-symbols-outlined {
+    color: var(--primary-color);
+    font-size: 28px;
 }
 
 /* Mission Section */
@@ -521,6 +546,28 @@ footer {
     border-top: 1px solid rgba(255,255,255,0.2);
     text-align: center;
     font-size: 0.9rem;
+}
+
+/* Accessibility Enhancements */
+*:focus {
+    outline: 3px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.skip-to-main-content {
+    position: absolute;
+    left: -9999px;
+    z-index: 999;
+    padding: 1em;
+    background-color: var(--white);
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+.skip-to-main-content:focus {
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
 }
 
 /* Media Queries */
