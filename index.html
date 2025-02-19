@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pet ONG - Adoção de Pets</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="assets/logo.png" alt="Logo Ong.pet">
+                </a>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="nav-links">
+                <a href="index.html" class="active">Nossos amigos</a>
+                <a href="ajuda.html">Ajude agora</a>
+                <a href="#">Produtos</a>
+                <a href="#">Doações</a>
+                <a href="#">Sobre nós</a>
+            </div>
+            <button class="quero-adotar" onclick="window.location.href='ajuda.html'">Quero Adotar</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>O seu melhor amigo como você sempre sonhou</h1>
+                <p>Resgatamos, cuidamos e selecionamos o pet ideal para completar sua vida.</p>
+                <button class="adotar-meu-pet" onclick="window.location.href='ajuda.html'">Adotar meu pet</button>
+            </div>
+            <div class="hero-image">
+                <img src="assets/hero-image.jpg" alt="Pessoa com cachorro">
+            </div>
+        </section>
+
+        <section class="categories">
+            <button class="category-btn">
+                <span class="material-symbols-outlined">pets</span>
+                Gatinhos
+            </button>
+            <button class="category-btn">
+                <span class="material-symbols-outlined">pets</span>
+                Cachorros
+            </button>
+            <button class="category-btn">
+                <span class="material-symbols-outlined">pets</span>
+                Roedores
+            </button>
+            <button class="category-btn">
+                <span class="material-symbols-outlined">pets</span>
+                Agapornis
+            </button>
+            <button class="category-btn">
+                <span class="material-symbols-outlined">pets</span>
+                Filhotes
+            </button>
+        </section>
+
+        <section class="pets">
+            <h2>Perfeitos pra você</h2>
+            <div class="pets-grid">
+                <div class="pet-card">
+                    <img src="assets/pet1.jpg" alt="Pet 1">
+                    <div class="pet-info">
+                        <h3>Sr. Pet</h3>
+                        <p>Macho | 2 anos</p>
+                    </div>
+                </div>
+                <div class="pet-card">
+                    <img src="assets/pet2.jpg" alt="Pet 2">
+                    <div class="pet-info">
+                        <h3>Amora</h3>
+                        <p>Fêmea | 1 ano</p>
+                    </div>
+                </div>
+                <div class="pet-card">
+                    <img src="assets/pet3.jpg" alt="Pet 3">
+                    <div class="pet-info">
+                        <h3>Rex</h3>
+                        <p>Macho | 3 anos</p>
+                    </div>
+                </div>
+                <div class="pet-card">
+                    <img src="assets/pet4.jpg" alt="Pet 4">
+                    <div class="pet-info">
+                        <h3>Nina</h3>
+                        <p>Fêmea | 6 meses</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="delivery">
+            <h2>Nós levamos seu pet até você!</h2>
+            <button class="solicitar" onclick="window.location.href='ajuda.html'">Solicitar hoje</button>
+        </section>
+
+        <section class="help">
+            <h2>Saiba como ajudar</h2>
+            <div class="help-options">
+                <div class="help-item">
+                    <h3>
+                        <span class="material-symbols-outlined">home</span>
+                        Lar Temporário
+                    </h3>
+                    <p>Dê abrigo para os nossos pets e resgatados temporariamente até serem adotados.</p>
+                    <a href="ajuda.html#lar-temporario" class="help-link">Saiba mais</a>
+                </div>
+                <div class="help-item">
+                    <h3>
+                        <span class="material-symbols-outlined">favorite</span>
+                        Adoção Responsável
+                    </h3>
+                    <p>Conheça nossos animais e escolha seu novo melhor amigo.</p>
+                    <a href="ajuda.html#adocao" class="help-link">Saiba mais</a>
+                </div>
+                <div class="help-item">
+                    <h3>
+                        <span class="material-symbols-outlined">volunteer_activism</span>
+                        Doações
+                    </h3>
+                    <p>Contribua com nossa ONG.</p>
+                    <a href="ajuda.html#doacoes" class="help-link">Saiba mais</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="mission">
+            <h2>Conheça nossa missão</h2>
+            <div class="video-container">
+                <iframe 
+                    width="100%" 
+                    height="100%" 
+                    src="https://www.youtube.com/embed/7rbPaq-8xvY" 
+                    title="Conheça nossa missão"
+                    frameborder="0" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                    allowfullscreen>
+                </iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="assets/logo.png" alt="Pet ONG Logo">
+                <img src="assets/qr-code.png" alt="QR Code" class="qr-code">
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>INSTITUCIONAL</h4>
+                    <ul>
+                        <li><a href="#">Sobre nós</a></li>
+                        <li><a href="#">Como ajudar</a></li>
+                        <li><a href="#">Nossos números</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>AJUDA E SUPORTE</h4>
+                    <ul>
+                        <li><a href="#">Central de ajuda</a></li>
+                        <li><a href="#">Fale conosco</a></li>
+                        <li><a href="#">Política de privacidade</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-social">
+       
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
